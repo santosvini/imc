@@ -116,7 +116,7 @@ button {
   user-select: none;
 }
 
-details {
+/* details {
   display: block;
   margin-top: -150px;
   font: 16px "Open Sans", Verdana, sans-serif;
@@ -140,3 +140,12 @@ details > p {
   border: none;
   text-align: center;
 }
+
+@media (max-width:1024px) {
+  details {
+    font: 16px "Open Sans", Verdana, sans-serif;
+    width: 75%;
+    height: 55px;
+    margin: 150px;
+  }
+} */
