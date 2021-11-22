@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IMC</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="title">Calculadora - IMC</div>
+        <div class="input">
+          <label>Sexo:</label>
+          <div>
+            <button for="gender_M" class="btn">FEM</button>
+            <button for="gender_H" class="btn">MASC</button>
+          </div>
+        </div>
+        <div class="input">
+          <label>Nome:</label>
+          <input type="text" id="nome" placeholder="Ex:Vini"/>
+        </div>
+        <div class="input">
+          <label>Altura:</label>
+          <input type="number" id="altura" placeholder="Ex: 1,70"/>
+        </div>
+        <div class="input">
+          <label>Peso:</label>
+          <input type="number" id="peso" placeholder="50kg"/>
+        </div>
+        <button onclick="imc()" id="calcular">Calcular</button>
+
+        <div class="result" id="resultado"></div>
+      </div>
+    </main>
+    <details id="details">
+      <summary>ViUs Tecnologia</summary>
+      <p>Dev Front-end & QA</p>
+    </details>
+    <script src="scripts.js"></script>
+  </body>
+</html>
