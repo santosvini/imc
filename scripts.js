@@ -1,5 +1,12 @@
 const calcular = document.getElementById("calcular");
-const details = document.getElementById("details");
+
+function homem() {
+  alert('Você clicou no botão MASC!');
+}
+
+function mulher() {
+  alert('Você clicou no botão FEM!')
+}
 
 function imc() {
   const nome = document.getElementById("nome").value;
@@ -32,5 +39,4 @@ function imc() {
       resultado.innerHTML = 'Preencha todos os campos'   
   }
   calcular.addEventListener("click", imc);
-  details.addEventListener("click", mouseEvent(on))
 }
