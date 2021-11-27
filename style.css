@@ -20,7 +20,7 @@ main {
   height: 600px;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 0 10px black;
 }
 
@@ -59,7 +59,7 @@ main {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
 
   color: #000;
   background: #fff;
@@ -82,7 +82,7 @@ main {
 }
 
 .btn:hover {
-  color: #FFC133;
+  color: gray;
 }
 
 .btn:active {
@@ -116,36 +116,51 @@ button {
   user-select: none;
 }
 
-/* details {
-  display: block;
-  margin-top: -150px;
-  font: 16px "Open Sans", Verdana, sans-serif;
+details {
+  font: 16px "Open Sans", Calibri, sans-serif;
+  width: 150px;
 }
 
 details > summary {
-  margin: auto;
-  padding: 2px;
-  width: 190px;
-
-  background-color: #fff;
-
+  padding: 3px 6px;
+  width: 10em;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
   cursor: pointer;
 }
 
 details > p {
-  background-color: white;
-  width: 98vw;
-  padding: 2px;
-  box-shadow: 3px 3px 4px #fff;
-  border: none;
-  text-align: center;
+  border-radius: 0 0 10px 10px;
+  background-color: #ddd;
+  padding: 3px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
 }
 
-@media (max-width:1024px) {
-  details {
-    font: 16px "Open Sans", Verdana, sans-serif;
-    width: 75%;
-    height: 55px;
-    margin: 150px;
+details[open] > summary {
+  background-color: #ccf;
+}
+
+@media (max-width: 760px) {
+  main {
+    display: flex;
+    width: 96vw;
+    height: 96vh;
+    margin: 6px 6px;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
   }
-} */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    background: #c69e33;
+    width: 400px;
+    height: 550px;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+  }
+}
